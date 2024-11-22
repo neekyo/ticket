@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nats
-          image: nkyo/nats
+          image: nats-streaming:0.17.0
           args: [
             '-p',
             '4222',
@@ -28,7 +28,7 @@ spec:
             '2',
             '-SD',
             '-cid',
-            'ticket'
+            'tickets'
           ]
 ---
 apiVersion: v1
